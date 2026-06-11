@@ -5,7 +5,7 @@ exports.getHello = (req, res) => {
   });
 };
 
-// Get user data from users table
+// Get user data from database's users table
 exports.getUsers = (req, res) => {
   db.query("SELECT * FROM users", (err, results) => {
     if (err) {
